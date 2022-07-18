@@ -1,0 +1,22 @@
+{
+  "name": "professional-readme-creator",
+  "version": "1.0.0",
+  "description": "A command-line program for helping to create professional-quality README.md files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRCallaghan/professional-readme-creator.git"
+  },
+  "author": "DRCallaghan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DRCallaghan/professional-readme-creator/issues"
+  },
+  "homepage": "https://github.com/DRCallaghan/professional-readme-creator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}

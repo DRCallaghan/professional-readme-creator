@@ -1,4 +1,6 @@
 // TODO: Include packages needed for this application
+const inquirer = require('inquirer');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -21,7 +23,76 @@ const questions = [
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                message: questions[0],
+                name: 'title',
+            },
+            {
+                type: 'input',
+                message: questions[1],
+                name: 'motivation',
+            },
+            {
+                type: 'input',
+                message: questions[2],
+                name: 'reason',
+            },
+            {
+                type: 'input',
+                message: questions[3],
+                name: 'problem',
+            },
+            {
+                type: 'input',
+                message: questions[4],
+                name: 'lesson',
+            },
+            {
+                type: 'input',
+                message: questions[5],
+                name: 'uniqueness',
+            },
+            {
+                type: 'input',
+                message: questions[6],
+                name: 'installation',
+            },
+            {
+                type: 'input',
+                message: questions[7],
+                name: 'usage',
+            },
+            {
+                type: 'input',
+                message: questions[8],
+                name: 'collaborators',
+            },
+            {
+                type: 'input',
+                message: questions[9],
+                name: 'thirdParties',
+            },
+            {
+                type: 'input',
+                message: questions[10],
+                name: 'tutorials',
+            },
+            {
+                type: 'input',
+                message: questions[11],
+                name: 'license',
+            },
+            {
+                type: 'input',
+                message: questions[12],
+                name: 'contribution',
+            }
+        ])
+}
 
 // Function call to initialize app
 init();
