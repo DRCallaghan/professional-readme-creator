@@ -1,25 +1,18 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string (license was made a required field, so this is unnecessary)
+// Creating a function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
   let licenseTag = license.replace(/ /g, "_");
-  let licenseUrl = `https://img.shields.io/badge/license-${licenseTag}-blue`;
+  let licenseUrl = (`[![license](https://img.shields.io/badge/license-${licenseTag}-blue)](https://img.shields.io/badge/license-${licenseTag}-blue)`);
   return licenseUrl;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) { }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) { }
-
-// TODO: Create a function to generate markdown for README
+// Creating a function to generate markdown for README
 function generateMarkdown(data) {
+  // using a string literal and info from the user input to create the whole README
   return `# ${data.title}
 
   ## Licensing:
-  [![license](${renderLicenseBadge(data.license)})](${renderLicenseBadge(data.license)})
+  ${renderLicenseBadge(data.license)}
+  See the licensing file for more information about this project's copyright information.
 
   ## Table of Contents
   - [Description](#description)
@@ -41,7 +34,7 @@ function generateMarkdown(data) {
   ## Usage:
   ${data.usage}
 
-  ## Outside Resources:
+  ## Outside Resources
   ${data.collaborators}
   ${data.thirdParties}
   ${data.tutorials}
@@ -51,7 +44,10 @@ function generateMarkdown(data) {
 
   ## Additional Info
   - Github: [${data.username}](https://github.com/${data.username})
-  - Email: ${data.email}`;
+  - Email: ${data.email}
+
+  If you would like to reach me for additional questions on this project, you can send me an email at the address listed above. Please title your email "${data.title} - Additional Questions" so I know to reply.`;
 }
 
+// exporting the markdown function
 module.exports = generateMarkdown;
