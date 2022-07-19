@@ -65,7 +65,7 @@ const questions = [
     // something unique about the project; a reason for people to use this project over other similar ones
     {
         type: 'input',
-        message: 'What makes your project stand out?',
+        message: 'What makes your project stand out? (Required)',
         name: 'uniqueness',
         validate: uniquenessInput => {
             if (uniquenessInput) {
@@ -107,9 +107,17 @@ const questions = [
     // collaborators
     {
         type: 'input',
-        message: 'List your collaborators, if any, with links to their GitHub profiles.',
+        message: 'List your collaborators, if any, with links to their GitHub profiles. (Required)',
         name: 'collaborators',
-        default: 'There were no collaborators on this project. My information can be found in Additional Info.'
+        default: 'There were no collaborators on this project. My information can be found in Additional Info.',
+        validate: collaboratorsInput => {
+            if (collaboratorsInput) {
+                return true;
+            } else {
+                console.log('An answer to this field is required.');
+                return false;
+            }
+        }
     },
     // third-party assets
     {
