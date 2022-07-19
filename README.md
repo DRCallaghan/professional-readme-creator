@@ -1,7 +1,7 @@
 # Professional README Creator
 
   ## Licensing:
-  [![license](https://img.shields.io/badge/license-MIT_License-blue)](https://img.shields.io/badge/license-MIT_License-blue)
+  [![license](https://img.shields.io/badge/license-MIT_License-blue)](https://shields.io/)
   See the licensing file for more information about this project's copyright information.
 
   ## Table of Contents
@@ -27,7 +27,7 @@
   ## Outside Resources
   There were no collaborators on this project. My information can be found in Additional Info.
   I used the Professional README Guide by [coding-boot-camp](https://www.github.com/coding-boot-camp/) to help guide the input and sections in this creator.
-  
+
 
   ## Contribution
   If you would like to contribute to this project, simply fork the code and make a pull request after adding your changes. I am open to changing this software so long as pull requests improve it.

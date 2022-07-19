@@ -1,7 +1,7 @@
 // Creating a function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
   let licenseTag = license.replace(/ /g, "_");
-  let licenseUrl = (`[![license](https://img.shields.io/badge/license-${licenseTag}-blue)](https://img.shields.io/badge/license-${licenseTag}-blue)`);
+  let licenseUrl = (`[![license](https://img.shields.io/badge/license-${licenseTag}-blue)](https://shields.io/)`);
   return licenseUrl;
 }
 
