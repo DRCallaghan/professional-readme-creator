@@ -11,7 +11,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Licensing:
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(data.license)}\n
   See the licensing file for more information about this project's copyright information.
 
   ## Table of Contents
