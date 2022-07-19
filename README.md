@@ -23,7 +23,7 @@
   As this project is for developers already familiar with coding, instructions here will assume basic knowledge of command line programs. First, clone this software to a local repository using the ssh link on the main page of this repo. Then, ensure [node.js](https://nodejs.org/en/) is installed. Third, use npm i to install all dependencies.
 
   ## Usage:
-  Run this project by opening a terminal and typing node index.js. Provide all information as asked for in the writing style you prefer to see on your README. You can also view [this video](https://drive.google.com/file/d/1OxQlQlwCm2iYBYkK0GKqSsYxVpUspWrg/view?usp=sharing) for a video walkthrough.
+  Run this project by opening a terminal and typing node index.js. Provide all information as asked for in the writing style you prefer to see on your README. You can also view [this video](https://drive.google.com/file/d/1_E0nJDBeZPVcniuaXdmzuQ0AhRJU_Syx/view?usp=sharing) for a video walkthrough.
 
   ## Outside Resources
   There were no collaborators on this project. My information can be found in Additional Info.
