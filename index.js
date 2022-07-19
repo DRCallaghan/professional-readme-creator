@@ -164,7 +164,7 @@ const questions = [
     // testing guidelines
     {
         type: 'input',
-        message: 'What are your guidelines for testing this project?',
+        message: 'What are your guidelines for testing this project? (Required)',
         name: 'testing',
         validate: testingInput => {
             if (testingInput) {
@@ -192,7 +192,7 @@ const questions = [
     // email address
     {
         type: 'input',
-        message: 'What is your email address?',
+        message: 'What is your email address? (Required)',
         name: 'email',
         validate: emailInput => {
             if (emailInput) {
