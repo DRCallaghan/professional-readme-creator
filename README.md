@@ -2,6 +2,7 @@
 
   ## Licensing:
   [![license](https://img.shields.io/badge/license-MIT_License-blue)](https://shields.io/)
+
   See the licensing file for more information about this project's copyright information.
 
   ## Table of Contents
