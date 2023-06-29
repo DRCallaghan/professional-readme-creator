@@ -2037,7 +2037,7 @@ function generateLicense(data) {
         case 'MIT License':
             text = `MIT License
 
-Copyright (c) ${new Date().getFullYear()} ${data.username}
+Copyright (c) ${new Date().getFullYear()} ${data.legalName}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -202,6 +202,20 @@ const questions = [
                 return false;
             }
         }
+    },
+    // legal name
+    {
+        type: 'input',
+        message: 'What is your legal name? (Required)',
+        name: 'legalName',
+        validate: legalNameInput => {
+            if (legalNameInput) {
+                return true;
+            } else {
+                console.log('Please enter your legal name.');
+                return false;
+            }
+        }
     }
 ];
 
